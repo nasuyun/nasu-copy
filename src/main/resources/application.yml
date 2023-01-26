@@ -1,0 +1,3 @@
+#logging.level.root: INFO
+
+thread_pool.size: 5
