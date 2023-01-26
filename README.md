@@ -4,8 +4,8 @@
 
 ## Test Cluster Connection
 
-```json
 POST /api/test
+```json
 {
 	"endpoint":"https://localhost:9200",
 	"username":"xxx",
@@ -15,11 +15,11 @@ POST /api/test
 
 ## Copy Index Metadata and data
 
-```json
 POST /api/_copy/index/*
+```json
 {
 	"source": {
-    "endpoint": "http://localhost:9210"
+    	"endpoint": "http://localhost:9210"
 	},
 	"dest": {
 		"endpoint": "https://router.nasuyun.com:9200",
@@ -31,11 +31,11 @@ POST /api/_copy/index/*
 
 ## Copy cluster template
 
-```json
 POST /api/_copy/template/*
+```json
 {
 	"source": {
-    "endpoint": "http://localhost:9210"
+	    "endpoint": "http://localhost:9210"
 	},
 	"dest": {
 		"endpoint": "https://router.nasuyun.com:9200",
@@ -47,8 +47,8 @@ POST /api/_copy/template/*
 
 ## Copy cluster pipeline
 
-```json
 POST /api/_copy/pipeline/*
+```json
 {
 	"source": {
     "endpoint": "http://localhost:9210"
@@ -63,5 +63,5 @@ POST /api/_copy/pipeline/*
 
 ## Cat state 
 ```json
-GET _state# nasu-copy
+GET _state
 ```
